@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    n=0
+    k=0
+    while k!=len(s):
+        if s[k].lower()==s[k]:
+            n=n+1
+        k=k+1
+    return n
+print(main("Ust"))

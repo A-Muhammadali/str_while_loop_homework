@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    n=0
+    k=0
+    while k!=len(s):
+        if ("!"<=s[k] and "/">=s[k])or(":"<=s[k] and "@">=s[k])or("["<=s[k] and "`">=s[k])or("{"<=s[k] and "~">=s[k]):
+            n=n+1
+        k=k+1
+    return n
+print(main("02k112lkl1j1!@#$%^&*"))

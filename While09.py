@@ -6,4 +6,10 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    n=0
+    k=0
+    while k!=len(s):
+        n=n+int(s[k])
+        k=k+1
+    return n
+print(main("987654"))

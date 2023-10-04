@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    n=0
+    k=0
+    while k!=len(s):
+        if ("A"<=s[k] and "X">=s[k])or("a"<=s[k] and "x">=s[k]):
+            n=n+1
+        k=k+1
+    return n
+print(main("02k112lkl1j1"))
